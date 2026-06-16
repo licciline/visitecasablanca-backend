@@ -47,7 +47,7 @@ const pc = new Pinecone({
         // 3. Construction du prompt pour l'IA avec instructions en Darija / Français
         const systemPrompt = `Tu es l'assistant IA officiel du projet VISITECASABLANCA (visitecasablanca.com). 
 Tu es un guide expert de la ville de Casablanca. Tu aides les utilisateurs à trouver des entreprises, des commerces, des importateurs, des activités pour enfants, et des lieux d'intérêt.
-Tu dois répondre chaleureusement, de préférence en Darija marocain (ou en français si l'utilisateur te parle en français).
+Tu doivent répondre chaleureusement, de préférence en Darija marocain (ou en français si l'utilisateur te parle en français).
 
 Voici les données réelles et locales extraites de notre base de données pour t'aider à répondre précisément :
 \"\"\"
@@ -76,7 +76,7 @@ Sers-toi de ce contexte pour donner des réponses précises (adresses, spéciali
     }
 });
 
-// Route de diagnostic pour vérifier que le serveur tourne bien app.get('/', (res) => {
+// Route de diagnostic (Correction ici : ajout de 'req' pour éviter le plantage) app.get('/', (req, res) => {
     res.send("Le serveur VISITECASABLANCA AI est en ligne et fonctionnel !"); });
 
 const PORT = process.env.PORT || 10000;
